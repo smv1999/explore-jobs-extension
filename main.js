@@ -10,7 +10,7 @@ fetch(jobs_url)
     let html = ``;
     items.forEach((el) => {
       html += `
-        <div>
+        <div class="card">
             <div class="list-header">
                 <h3>${el.querySelector("title").innerHTML}</h3>
             </div>
