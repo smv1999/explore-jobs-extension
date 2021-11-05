@@ -8,6 +8,7 @@ fetch(jobs_url)
     console.log(data);
     const items = data.querySelectorAll("item");
     let html = ``;
+    document.getElementById('maintitle').innerHTML = "List of Jobs";
     items.forEach((el) => {
       html += `
         <div class="card">
